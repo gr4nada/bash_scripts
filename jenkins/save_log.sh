@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log_path="/var/log/api"
+log_path="~/logs/api"
 
       
 function save_log() {
@@ -14,6 +14,7 @@ function create_header(){
 
 function help() {
   cat<<-EOM
+
   NAME:
       save_log - Create the system log output.
 
@@ -29,6 +30,7 @@ function help() {
                 INFO - Log INFO level.
                 ERROR - Log ERROR level.
                 WARN - Log WARN level.
+                
 EOM
 }
 

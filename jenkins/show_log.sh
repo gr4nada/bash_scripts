@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # start variables
-path_log="/var/log/api"
+path_log="~/logs/api"
 time_stamp=$(date +%Y-%m-%d)
 
 function start_follow(){
