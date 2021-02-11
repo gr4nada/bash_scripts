@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log_path="logs"
+log_path="/var/log/api"
 
       
 function save_log() {
