@@ -1,9 +1,12 @@
 #!/bin/bash
 
+file_path="/home/$USER/"
+filename="scenarios.txt"
+
 function read_file(){    
     while IFS=$':' read name parameters description;
     do echo "$name - $description"; 
-    done < scenarios.tx
+    done < $file_paths$filename
 }
 
 function help() {
