@@ -1,89 +1,13 @@
-# JENKINS API SHELL
+# SHELL BASH
 
 ------------------------------------------------
 
-## start_build
+## Description
 
-* Description
+Bash is the shell, or command language interpreter, for the GNU operating system. The name is an acronym for the ' Bourne-Again SHell ', a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell sh , which appeared in the Seventh Edition Bell Labs Research version of Unix.
 
-    Start .
+## Installing Ubuntu Bash for Windows 10
 
-* Usage
-
-    ```console
-    user@server:~$ start_build
-    user@server:~$ start_build [help|--help
-    ```
-
-## show_scenarios
-
-* Description
-
-  Show the scenarios appended data as the api log file.
-
-* Usage
-
-  ```console
-  user@server:~$ show_scenarios
-  user@server:~$ show_scenarios [help|--help
-  ```
-
-## status_build
-  
-* Description
-
-  Get the status.
-
-* Usage
-
-  ```console
-  user@server:~$ status_build
-  user@server:~$ status_build [help|--help
-  ```
-
-## stop_build
-
-* Description
-
-  Stop .
-
-* Usage
-
-  ```console
-  user@server:~$ stop_build
-  user@server:~$ stop_build [help|--help
-    ```
-
-## show_log
-
-* Description
-
-  Show the output appended data as the api log file.
-
-* Usage
-
-  ```console
-  user@server:~$ show_log
-  user@server:~$ show_log [help|--help
-    ```
-
-## save_log
-
-* Description
-
-  Appended data on the api log file.
-
-* Options:
-
-  * TYPE
-    * EVENT -  Create a tag event on LOG. The message in this case is a event title.
-    * INFO - Log INFO level.
-    * ERROR - Log ERROR level.
-    * WARN - Log WARN level.
-
-* Usage
-
-  ```console
-  user@server:~$ save_log <TYPE> <MESSAGE>
-  user@server:~$ save_log [help|--help
-  ```
+  1. Open Settings app and go to Update & Security -> For Developers and choose the “Developer Mode” radio button.
+  2. Then go to the Control Panel -> Programs and click “Turn Windows feature on or off”. Enable “Windows Subsystem for Linux(Beta)”. When you click OK, you will be prompted to reboot. Click “Restart Now” to reboot your PC..
+  3. After rebooting, head to Start and search for “bash”. Run the “bash.exe” file. When you run it for first time, you’ll need to accept the terms of service as “Bash on Ubuntu for Windows” will be downloaded from the Windows Store. You will be asked for a Username and Password for the Ubuntu environment. Please store them somewhere as the password is required to run commands as sudo.
