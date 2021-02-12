@@ -1,16 +1,21 @@
 #!/bin/bash
+#
+# Author:
+#        _                             _             
+#       | |                           (_)            
+#     __| | _ __    __ _  _ __   __ _  _  ___   ___  
+#    / _` || '_ \  / _` || '__| / _` || |/ __| / _ \ 
+#   | (_| || |_) || (_| || |   | (_| || |\__ \| (_) |
+#    \__,_|| .__/  \__,_||_|    \__,_||_||___/ \___/ 
+#          | |                                       
+#          |_|                                       
+#                      email:  
 
-log_path="~/logs/api"
-
-      
-function save_log() {
-  echo "$(date +%T) - $log_level - $msg" >> $log_path/"$time_stamp"_api.log
-}
-
-function create_header(){
-  echo "" >> $log_path/"$time_stamp"_api.log
-  echo "$(date +%T) - [$msg] ==========================================" >> $log_path/"$time_stamp"_api.log
-}
+# Start Variables
+log_path="/home/$USER/logs/api"
+time_stamp=""
+count=1
+log_level=""
 
 function help() {
   cat<<-EOM
@@ -33,15 +38,20 @@ function help() {
                 
 EOM
 }
+      
+function save_log() {
+  echo "$(date +%T) - $log_level - $msg" >> $log_path/"$time_stamp"_api.log
+}
 
-# start variables
-time_stamp=""
-count=1
-log_level=""
+function create_header(){
+  echo "" >> $log_path/"$time_stamp"_api.log
+  echo "$(date +%T) - [$msg] ==========================================" >> $log_path/"$time_stamp"_api.log
+}
 
 # test to validate if there are any arguments
 if [[ -z "$1" ]]; then
   help
+  exit 1
 fi
 
 # correctly getting the input strings

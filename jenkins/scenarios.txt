@@ -1,8 +1,8 @@
-scenario1:true,true,true,true:Esse teste 1 não faz muita coisa
-scenario2:true,true,true,true:Esse teste 2 não faz muita coisa
-scenario3:true,true,true,true:Esse teste 3 não faz muita coisa
-scenario4:true,true,true,true:Esse teste 4 não faz muita coisa
-scenario5:true,true,true,true:Esse teste 5 não faz muita coisa
-scenario6:true,true,true,true:Esse teste 6 não faz muita coisa
-scenario7:true,true,true,true:Esse teste 7 não faz muita coisa
-scenario8:true,true,true,true:Esse teste 8 não faz muita coisa
+scenario1:FALSE,FALSE,TRUE,TRUE:Esse teste 1 não faz muita coisa
+scenario2:FALSE,FALSE,TRUE,FALSE:Esse teste 2 não faz muita coisa
+scenario3:TRUE,FALSE,FALSE,TRUE:Esse teste 3 não faz muita coisa
+scenario4:TRUE,FALSE,FALSE,FALSE:Esse teste 4 não faz muita coisa
+scenario5:FALSE,FALSE,TRUE,TRUE:Esse teste 5 não faz muita coisa
+scenario6:FALSE,TRUE,TRUE,FALSE:Esse teste 6 não faz muita coisa
+scenario7:TRUE,TRUE,FALSE,TRUE:Esse teste 7 não faz muita coisa
+scenario8:TRUE,TRUE,FALSE,FALSE:Esse teste 8 não faz muita coisa
